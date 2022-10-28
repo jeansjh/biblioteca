@@ -1,0 +1,25 @@
+.home {
+  width: 100%;
+  height: 447px;
+}
+.module {
+  overflow: hidden;
+}
+
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.button{
+  color: #ffb606;
+  text-align: center;
+  margin: 1rem 0 0 0;
+}
+.price_box{
+  margin-top: 1rem;
+}
+.card-title{
+  margin-top: 1rem;
+  color: #000;
+}

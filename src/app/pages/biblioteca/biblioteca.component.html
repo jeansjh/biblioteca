@@ -1,0 +1,45 @@
+<!-- Home -->
+
+<div class="home">
+  <div class="home_background_container prlx_parent">
+    <div class="home_background prlx" style="background-image:url(assets/images/news_background.jpg)"></div>
+  </div>
+  <div class="home_content">
+    <h1>Biblioteca</h1>
+  </div>
+</div>
+
+<!-- Popular -->
+
+<div class="popular page_section">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="section_title text-center">
+          <h1>Nuestros Libros Virtuales</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="row course_boxes">
+
+      <!-- Popular Course Item -->
+      <div class="col-lg-4 course_box"  *ngFor="let libro of libros">
+        <div class="card">
+          <img class="card-img-top" [src]="getImageCover()" alt="{{libro.titulo}}">
+          <div class="card-body text-center">
+            <div class="card-title"><a>{{libro.titulo}}</a></div>
+            <div class="card-text module line-clamp">{{libro.desc1}}</div>
+            <div class="button button_line_1 text-center trans_200"><a (click)="selectLibro(libro)">Lee Mas >></a></div>
+          </div>
+          <div class="price_box d-flex flex-row align-items-center">
+
+            <div class="course_author_name">{{libro.autor}} | <span> {{libro.nom_curso}} </span> </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
